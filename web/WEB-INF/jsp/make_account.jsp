@@ -1,0 +1,144 @@
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>NEW ACCOUNT</title>
+        <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </head>
+    <jsp:include page="static2.jsp"/>
+        <form action="other_1.htm">
+            <div class="intro">
+            <div class ="container" style="background: rgb(0,0,0,0)">
+			<br>
+			<div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-3"></div>
+                <div class="col-lg-4 col-md-4 col-sm-5">
+                    <div class="row" >
+                        <div class="col-sm-6">
+                            
+                        </div>
+                         <div class="col-sm-6">
+                             <big> <b>MAKE ACCOUNT</b></big>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br><br>
+			
+			
+			
+            <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-3"></div>
+                <div class="col-lg-4 col-md-4 col-sm-5" >
+                    <div class="row">
+                        <div class="col-sm-6">
+                           Name
+                        </div>
+                         <div class="col-sm-6">
+                             <input type="text" name="name" required="true" />
+                        </div>
+                        </div>
+                </div>
+            </div>
+            <br>
+       
+            
+            	<div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-3"></div>
+                <div class="col-lg-4 col-md-4 col-sm-5" >
+                    <div class="row">
+                        <div class="col-sm-6">
+                            Account Number
+                        </div>
+                         <div class="col-sm-6">
+                             <input type="text" name="accn" required="true"/>
+                        </div>
+                        </div>
+                </div>
+            </div>
+            <br>
+	
+            <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-3"></div>
+                <div class="col-lg-4 col-md-4 col-sm-5" >
+                    <div class="row">
+                        <div class="col-sm-6">
+                            User Name
+                        </div>
+                         <div class="col-sm-6">
+                             <input type="text" name="user_name" required="true"/>
+                        </div>
+                        </div>
+                </div>
+            </div>
+            <br>
+            
+            <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-3"></div>
+                <div class="col-lg-4 col-md-4 col-sm-5" >
+                    <div class="row">
+                        <div class="col-sm-6">
+                            Password
+                        </div>
+                         <div class="col-sm-6">
+                             <input type="text" name="pass" required="true"/>
+                        </div>
+                        </div>
+                </div>
+            </div>
+            <br>
+            
+            <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-3"></div>
+                <div class="col-lg-4 col-md-4 col-sm-5" >
+                    <div class="row">
+                        <div class="col-sm-6">
+                            E-Mail
+                        </div>
+                         <div class="col-sm-6">
+                             <input type="text" name="email" required="true"/>
+                        </div>
+                        </div>
+                </div>
+            </div>
+            <br>
+	
+            <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-3"></div>
+                <div class="col-lg-4 col-md-4 col-sm-5" >
+                    <div class="row">
+                        <div class="col-sm-6">
+                            Opening Balance
+                        </div>
+                         <div class="col-sm-6">
+                             <input type="text" name="ob" required="true"/>
+                        </div>
+                        </div>
+                </div>
+            </div>
+            <br>
+            
+           <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-3"></div>
+                <div class="col-lg-4 col-md-4 col-sm-5">
+                    <div class="row" >
+                        <div class="col-sm-6">
+                           
+                        </div>
+                         <div class="col-sm-6">
+                            <input type="submit" name ="page" value ="MAKE USER ACCOUNT">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <h4 align="center" >${userForm.result}</h4>
+            </form></div></div></body>
+</html>
