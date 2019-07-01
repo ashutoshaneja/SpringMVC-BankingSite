@@ -10,8 +10,7 @@ email varchar(60),
 balance int
 );
 
-insert into user_accounts values('mridul',1,'abc',123,'mridulchopra97@gmail.com',1000);
-insert into user_accounts values('Ashutosh',2,'xyz',123,'mridulchopra97@gmail.com',500);
+insert into user_accounts values('Ashutosh',1,'xyz',123,'aaneja0007@gmail.com',500);
 select * from user_accounts 
 delete  from user_accounts;
 
