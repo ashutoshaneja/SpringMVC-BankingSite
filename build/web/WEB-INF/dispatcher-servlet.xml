@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!-- was: <?xml version="1.0" encoding="UTF-8"?> -->
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+       http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.0.xsd
+       http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.0.xsd">
+
+    <bean class="org.springframework.web.servlet.mvc.support.ControllerClassNameHandlerMapping"/>
+    
+    <bean class="controllers.create" id="create"/>
+    <bean class="controllers.introcontroller" id="start"/>
+    <bean class="controllers.welc" id="first"/>
+    <bean class="controllers.about" id="whoweare"/>
+    <bean class="controllers.balance" id="balance"/>
+    <bean class="controllers.transfer" id="transfer"/>
+    <bean class="controllers.login" id="login"/>
+    <bean class="controllers.other" id="other"/>
+    <bean class="controllers.other1" id="other1"/>
+    <!--
+    Most controllers will use the ControllerClassNameHandlerMapping above, but
+    for the index controller we are using ParameterizableViewController, so we must
+    define an explicit mapping for it.
+    -->
+    <bean id="urlMapping" class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
+        <property name="mappings">
+            <props>
+                <prop key="index.htm">indexController</prop>
+                <prop key="intro.htm">start</prop>
+                <prop key="welcome.htm">first</prop>
+                <prop key="aboutus.htm">whoweare</prop>
+                <prop key="static.htm">create</prop>
+                <prop key="balance.htm">balance</prop>
+                <prop key="transfer.htm">transfer</prop>
+                <prop key="admin.htm">login</prop>
+                <prop key="other.htm">other</prop>
+                <prop key="other_1.htm">other1</prop>
+            </props>
+        </property>
+    </bean>
+
+    <bean id="viewResolver"
+          class="org.springframework.web.servlet.view.InternalResourceViewResolver"
+          p:prefix="/WEB-INF/jsp/"
+          p:suffix=".jsp" />
+
+    <!--
+    The index controller.
+    -->
+    <bean name="indexController"
+          class="org.springframework.web.servlet.mvc.ParameterizableViewController"
+          p:viewName="index" />
+
+</beans>
