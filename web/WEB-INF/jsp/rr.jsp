@@ -19,10 +19,10 @@
         <div class="intro">
             <center>
                 <h1>WELCOME TO MAK BANK</h1>     
-                <h3>HUM SAB KA SAATHI</h3>
+                <h3>HUM SAB KA SAATHI #TheTrueCompanion</h3>
                 <a href="static.htm">
                     <img src="images/Makbank.png" alt="" style="width: 100%; height: 100%;"></a>
-                <br><br><h3>Click on the image to continue !</h3>
+                <br><br><h3>Click on this image to continue!</h3>
             </center>
         </div>
           <script  src="js/background.js"></script>
