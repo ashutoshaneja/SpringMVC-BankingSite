@@ -26,15 +26,9 @@
                         </center>
                     </div>
                 </div>
-            </div>
-            <br><br>
-	
-           
-                          <img src="images/Makbank.png" alt="" style="bottom: 33% ;width: 72%; height: 74%">
-             
-            <br/>	
-          
-            
+            </div> <br><br>
+                          <img src="images/Makbank.png" alt="" style="bottom: 33% ;width: 72%; height: 74%">     
+            <br/>
             </div>
     </body>
 </html>
