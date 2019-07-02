@@ -29,9 +29,7 @@ ABOUT US
 </h1>
 <article>
     <p style="font-size: 28px; font-family: 'Century Gothic'; padding: auto;">
-        Hey Everyone, this project "MAK BANK" has been developed by MAK Inc. basically. <br><br>
-        New Project arriving soon <font style="color: cyan">#MAKwillbebacksoon</font><br>
-      
+        This pseudo Site has been developed by the following developers: -
       <br>
  <div id="team" class="section md-padding">
 
