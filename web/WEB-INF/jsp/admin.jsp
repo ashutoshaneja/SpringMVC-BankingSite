@@ -24,7 +24,7 @@
                 <div class="col-lg-4 col-md-4 col-sm-5">
                     <div class="row" >
                         <center>
-                             <h3><b>ADMIN LOGIN</b></h3>
+                             <h3><b>ADMIN's LOGIN</b></h3>
                         </center>
                     </div>
                 </div>
