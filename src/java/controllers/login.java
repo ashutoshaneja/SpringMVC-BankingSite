@@ -23,7 +23,7 @@ public class login {
 String url,sql;
 Statement st;
 ResultSet rs;
-    @RequestMapping(method = RequestMethod.GET)
+    @RequestMapping (method = RequestMethod.GET)
     public String viewRegistration(Map<String, Object> model) {
         Bean userForm = new Bean();    
         model.put("userForm", userForm);
@@ -31,7 +31,7 @@ ResultSet rs;
          
         return "admin";
     }    
-    @RequestMapping(method = RequestMethod.POST)
+    @RequestMapping (method = RequestMethod.POST)
 	public String processRegistration(@ModelAttribute("userForm") Bean user, 
 			Map<String, Object> model) {
             
