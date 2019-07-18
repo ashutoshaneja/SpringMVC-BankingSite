@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 public class about {
      @RequestMapping
-     public String menu(ModelMap m)
+     public String menu (ModelMap m)
             {
             return "aboutus";
              }
