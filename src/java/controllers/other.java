@@ -14,13 +14,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 @Controller
-@RequestMapping(value = "/other")
+@RequestMapping (value = "/other")
 public class other {
     Connection cn;
 String url,sql;
 Statement st;
 ResultSet rs;
-    @RequestMapping(method = RequestMethod.GET)
+    @RequestMapping (method = RequestMethod.GET)
     public String viewRegistration(Map<String, Object> model) {
         Bean userForm = new Bean();    
         model.put("userForm", userForm);
@@ -28,7 +28,7 @@ ResultSet rs;
     
             return "other";
     }    
-    @RequestMapping(method = RequestMethod.POST)
+    @RequestMapping (method = RequestMethod.POST)
 	public String processRegistration(@ModelAttribute("userForm") Bean user, 
 			Map<String, Object> model) {
              if(user.getOther().equals("MAKE ACCOUNT"))
@@ -60,9 +60,11 @@ ResultSet rs;
         {
       Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver").newInstance() ;
        String url="jdbc:sqlserver://localhost;instance=LallyInfosys;databaseName=online_banking;user=online_banking;password=123";
-           cn=DriverManager.getConnection(url);    }
+           cn = DriverManager.getConnection(url);    }
         catch(Exception e)
-        { System.out.println(e);} }
+        {
+		System.out.println(e);}
+	 }
     public String deposit(int accn , int amt)
     { 
         try
@@ -115,9 +117,13 @@ ResultSet rs;
                    + " Balance is : Rs "+(bal-amt);       
         }
         else
-        { return "Please Enter valid Account Number";}
+        { 
+		return "Please Enter valid Account Number";
+	}
             }
         catch(Exception e)
-        { return e+"";}
+        { 
+		return e+"";
+	}
     }
 }
