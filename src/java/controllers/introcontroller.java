@@ -7,9 +7,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 public class introcontroller {
      @RequestMapping
-     public String menu(ModelMap m)
+     public String menu (ModelMap m)
             {
             return "intro";
              }
 }
-
