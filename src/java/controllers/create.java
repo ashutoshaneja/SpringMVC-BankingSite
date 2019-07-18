@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class create {
 
     @RequestMapping
-     public String menu(ModelMap m)
+     public String menu (ModelMap m)
             {
             return "static";
              }
