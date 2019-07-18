@@ -3,8 +3,8 @@ package controllers;
 
 
 public class Bean {
-    String name,pass,result,other,branch,email,uname;
- int acc_no,acc2,amount;
+    String name, pass, result, other, branch, email, uname;
+ int acc_no, acc2, amount;
     public String getUname() {
         return uname;
     }
