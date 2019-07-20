@@ -84,8 +84,6 @@ body {
   color: #5e7283;
 }
 
-/*********************************************************/
-
 .intro {
   z-index: 10;
   position: absolute;
@@ -126,9 +124,6 @@ body {
   font-size: 16px;
   color: #5e7283;
 }
-
-
-/*******************/
 
 .transfer {
   z-index: 10;
@@ -171,8 +166,6 @@ body {
   color: #5e7283;
 }
 
-/*****************************************************/
-
 .balance {
   z-index: 10;
   position: absolute;
@@ -213,7 +206,6 @@ body {
   font-size: 16px;
   color: #5e7283;
 }
-
 
 .pentahedron {
   position: absolute;
